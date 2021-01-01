@@ -58,7 +58,7 @@ def self.new_from_filename(filename)
 end
 
 
-def create_by_filename(filename)
+def create_from_filename(filename)
     song_array = filename.split(" - ")
     song_array[1] = song_array[1].chomp(".mp3")
     song = self.new
